@@ -1,0 +1,26 @@
+
+public class Quadratic {
+	public static void main (String[] args) {
+		
+		double a=1,b=-7,c=10;
+		double step1;
+		step1=Math.pow(b, 2);
+		double step2=step1-4*a*c;
+		if (step2<0)
+			step2=step2*-1;
+		double step3;
+		step3=Math.sqrt(step2);
+		double step4=-b+step3;
+		double step5=step4/2/a;
+		double step6=-b-step3;
+		double step7=step6/2/a;
+		if (step1-4*a*c>=0)
+		System.out.println("When a=" + a + ", b=" + b + ","
+		+ " and c=" + c + ", x=" + step5 + " or " + step7);
+		else 
+		System.out.println("When a=" + a + ", b=" + b + ","
+		+ " and c=" + c + ", x=" + step5 + "i or " + step7 + "i");
+		
+
+}
+}
